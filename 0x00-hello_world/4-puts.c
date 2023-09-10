@@ -1,12 +1,11 @@
 #include <stdio.h>
 /**
-* main - Entry point function
-* Description: 'First task that prints string'
-* Return: 0
-*/
+ * main - Entry point
+ * Description: 'the program's description'
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
-
