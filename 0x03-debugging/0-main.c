@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * main - test if int == 0,
  * Description: none.
@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-    int i = 0;
+	int i = 0;
 
-    positive_or_negative(i);
+	positive_or_negative(i);
 
-    return (0) ;
+	return (0);
 }
 
