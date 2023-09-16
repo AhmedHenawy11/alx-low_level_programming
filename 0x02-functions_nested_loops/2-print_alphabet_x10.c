@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include"main.h"
 /**
  * print_alphabet_x10 - prints the alphabet in lowercase 10 times.
  * Description: followed by a new line
