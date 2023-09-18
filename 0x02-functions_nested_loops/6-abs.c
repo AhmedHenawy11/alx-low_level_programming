@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _abs - print_abslute value of number - test the sign of the number
- * @r: the number to be tested
- * Return: aboluse vlaue of number
+ * _abs - computes the absolute value of an integer
+ * @n: the int to check
+ * Return: the absolute value of int
  */
 	int _abs(int n)
 	{
