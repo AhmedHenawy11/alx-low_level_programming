@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - check the code.
  *
@@ -7,6 +7,9 @@
  */
 int main(void)
 {
-    print_alphabet_x10();
+    int a = 13;
+
+    _islower(a);
+
     return (0);
 }
