@@ -5,11 +5,11 @@
  * @r: the number to be tested
  * Return: aboluse vlaue of number
  */
-int _abs(int r)
-{
-	if (r >= 0)
+	int _abs(int n)
 	{
-		return (r);
+		if (n >= 0)
+		{
+			return (n);
+		}
+		return (-n);
 	}
-	return (-r);
-}
