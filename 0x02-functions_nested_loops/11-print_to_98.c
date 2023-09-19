@@ -2,28 +2,26 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - print_from n number to 98
- * @n: the num
- * Return: void
+ * print_to_98 - print numbers n to 98
+ * @n: integer argument
  */
+
 void print_to_98(int n)
 {
-	while (n < 99)
+	while (n < 98)
 	{
-		if (n < 10)
-		{
-			_putchar((n % 10) + '0');
-		}
-		else
-		{
-			_putchar((n / 10) + '0');
-			_putchar((n % 10) + '0');
-		}
-		if (n != 98)
-		{
-			_putchar(',');
-		}
-		_putchar(' ');
+		printf("%d, ", n);
 		n++;
 	}
+
+	while (n > 98)
+	{
+		printf("%d, ", n);
+		n--;
+	}
+
+	if (n == 98)
+		printf("%d", n);
+
+	printf("\n");
 }
