@@ -1,27 +1,40 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_to_98 - print numbers n to 98
- * @n: integer argument
+ * times_table - print multiplication table
  */
 
-void print_to_98(int n)
+void times_table(void)
 {
-	while (n < 98)
+	int row;
+	int column;
+	int product;
+
+	for (row = 0; row <= 9; row++)
 	{
-		printf("%d, ", n);
-		n++;
+		for (column = 0; column <= 9; column++)
+		{
+			product = (row * column);
+
+			if (column == 0)
+			{
+				_putchar('0' + product);
+			}
+			else if (product <= 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + product);
+			}
+			else if (product > 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar('0' + (product / 10));
+				_putchar('0' + (product % 10));
+			}
+		}
+		_putchar('\n');
 	}
-
-	while (n > 98)
-	{
-		printf("%d, ", n);
-		n--;
-	}
-
-	if (n == 98)
-		printf("%d", n);
-
-	printf("\n");
 }
