@@ -2,6 +2,11 @@
 #include "main.h"
 
 /**
-* 
-* 
+* _puts - printing function
+* @str: string
 */
+
+void _puts(char *str)
+{
+	puts("%s\n", str);
+}
