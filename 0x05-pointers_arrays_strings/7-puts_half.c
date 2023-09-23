@@ -15,6 +15,10 @@ void puts_half(char *str)
 	{
 		j++;
 	}
+	if (j % 2 > 0)
+	{
+		j += 1;
+	}
 	i = j / 2;
 	while (i < j)
 	{
