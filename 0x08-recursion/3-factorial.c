@@ -2,7 +2,16 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * factorial - factorial of number.
+ * @n: number.
  *
- * Return: Always 0.
+ * Return: string lenth.
  */
+int factorial(int n)
+{
+	if (n == 0)
+	{
+		return (1);
+	}
+	return ((factorial((n - 1)) * (n)));
+}
