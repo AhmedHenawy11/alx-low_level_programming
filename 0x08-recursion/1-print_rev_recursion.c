@@ -1,21 +1,13 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _strlen_recursion - length of the input char.
- * @s: the input string .
- *
- * Return: string lenth.
+ * _print_rev_recursion - reverse char
+ * @s: input char.
  */
-int _strlen_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
-	int longit = 0;
-
-	if (*s)
+	if(s)
 	{
-		longit++;
-		longit += _strlen_recursion(s + 1);
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
 	}
-
-	return (longit);
 }
