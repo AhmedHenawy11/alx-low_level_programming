@@ -8,7 +8,7 @@
  *
  * Return: the int converted
  */
-int atoi(char *s)
+int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
 
@@ -55,8 +55,8 @@ int atoi(char *s)
 */
 int main(int argc, char *argv[])
 {
-	int a = atoi(argv[1]);
-	int b = atoi(argv[2]);
+	int a = _atoi(argv[1]);
+	int b = _atoi(argv[2]);
 
 	printf("%d\n", a * b);
 	if (argc != 3)
