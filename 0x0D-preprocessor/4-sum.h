@@ -5,6 +5,6 @@
 #include <stdlib.h>
 #include <limits.h>
 
-#define SUM(x, y)  (x * y)
+#define SUM(x, y) ((x) + (y))
 
 #endif
