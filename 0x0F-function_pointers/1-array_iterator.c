@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-
+#include <stdlib.h>
 /**
  * array_iterator - printing a values of array
  * @array: argument passed to another function by pointer.
@@ -8,14 +8,15 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned int i;
-
-	if (array == '\0' || action == '\0')
+	if ((*action) == NULL || array == NULL || size == NULL)
 	{
-	return;
+		return;
 	}
-	for (i = 0; i < size; i++)
+	int n = 0;
+
+	while (n < size)
 	{
-	action(array[i]);
+		action(array[n]);
+		n += 1;
 	}
 }
