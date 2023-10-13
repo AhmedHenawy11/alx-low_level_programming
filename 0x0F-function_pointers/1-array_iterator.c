@@ -8,9 +8,9 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if ((*action) == NULL || array == NULL || size == NULL)
+	if (array == '\0' || action == '\0')
 	{
-		return;
+	return;
 	}
 	 unsigned n = 0;
 
