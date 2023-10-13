@@ -1,24 +1,22 @@
 #include "function_pointers.h"
-#include <stdio.h>
+
 /**
-* array_iterator - prints array element
-* @array: array as pinter
-* @size: zine of nbrs to print
-* @action: pointer
-* Return: nthing
-*/
-	void array_iterator(int *array, size_t size, void (*action)(int))
+ * array_iterator - printing a values of array
+ * @array: argument passed to another function by pointer.
+ * @action: pointer to a function .
+ * @size: defined size
+ */
+void array_iterator(int *array, size_t size, void (*action)(int))
+{
+	unsigned int n = 0;
+
+	if (action == NULL || array == NULL)
 	{
-		unsigned int i;
-
-
-		if (array == NULL || action == NULL)
-			return;
-
-
-		for (i = 0; i < size; i++)
-		{
-			action(array[i]);
-		}
+		return;
 	}
-	
+	while (n < size)
+	{
+		action(array[n]);
+		n += 1;
+	}
+}
