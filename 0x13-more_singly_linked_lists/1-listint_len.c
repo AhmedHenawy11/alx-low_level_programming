@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_listint - prints all the elements of a linked list
+ * listint_len - get the number of nodes
  * @h: linked list of type listint_t to print
  *
  * Return: number of nodes
