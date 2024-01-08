@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 """
 "0-add_integer" module.
 contains function that return sum of two integers
@@ -13,7 +13,9 @@ def add_integer(a, b):
     if type(b) is not int and type(b) is not float:
         raise TypeError("b must be an integer")
 
-    a = int(a)
-    b = int(b)
+    if type(a) is float:
+        a = int(a)
+    if type(b) is float:
+        b = int(b)
 
     return a + b
