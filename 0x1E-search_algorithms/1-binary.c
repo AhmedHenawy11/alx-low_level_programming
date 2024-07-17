@@ -2,11 +2,13 @@
 
 /**
  * recursive_search - searches for a value in an array of
+ * integers using the Binary search algorithm
  *
- * @array: array input
- * @size: array size
- * @value: search this value
- * Return: the index
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
 int recursive_search(int *array, size_t size, int value)
 {
@@ -38,12 +40,13 @@ int recursive_search(int *array, size_t size, int value)
 }
 
 /**
- * binary_search - calls to binary search
+ * binary_search - calls to binary_search to return
+ * the index of the number
  *
- * @array: array input
- * @size: array size
- * @value: value to lok for
- * Return: the index
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
 int binary_search(int *array, size_t size, int value)
 {

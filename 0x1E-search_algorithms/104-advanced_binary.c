@@ -1,13 +1,14 @@
 #include "search_algos.h"
 
 /**
- * rec_search - look for a value in an array of
+ * rec_search - searches for a value in an array of
+ * integers using the Binary search algorithm
  *
  *
- * @array: array input
- * @size: array size
- * @value: value to look for it
- * Return: index of a nbr
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
 int rec_search(int *array, size_t size, int value)
 {
@@ -42,12 +43,13 @@ int rec_search(int *array, size_t size, int value)
 }
 
 /**
- * advanced_binary - calls  to return an index
+ * advanced_binary - calls to rec_search to return
+ * the index of the number
  *
- * @array: array input
- * @size: array size
- * @value: value to look for it
- * Return: the number index
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
 int advanced_binary(int *array, size_t size, int value)
 {

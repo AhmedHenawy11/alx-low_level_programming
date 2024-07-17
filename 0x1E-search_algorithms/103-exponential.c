@@ -41,14 +41,15 @@ int _binary_search(int *array, size_t left, size_t right, int value)
 
 /**
   * exponential_search - Searches for a value in a sorted array
+  *                      of integers using exponential search.
+  * @array: A pointer to the first element of the array to search.
+  * @size: The number of elements in the array.
+  * @value: The value to search for.
   *
-  * @array: the first element pointer of the array to look for.
-  * @size: The number of array elements.
-  * @value: The value to look for.
+  * Return: If the value is not present or the array is NULL, -1.
+  *         Otherwise, the index where the value is located.
   *
-  * Return: If ther is no  value is not present -1.
-  *
-  * Description: Prints a value in the array.
+  * Description: Prints a value every time it is compared in the array.
   */
 int exponential_search(int *array, size_t size, int value)
 {
